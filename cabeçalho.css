@@ -1,0 +1,95 @@
+
+*{
+margin: 0;
+padding: 0;
+}
+
+
+#container {
+    width: 980px; /*largura do box content, sem contar padding e border*/
+    margin: 50px auto 0; /*valores em sentido horário;
+    20px para margem superior;
+    valor auto renderiza automaticamente margens laterais, para centralizar conteúdo
+    valor 0 para bottom=0*/
+ 
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between; /*separa o logo e o menu*/
+    align-items: center; /*alinha verticalmente o logo e o menu */
+    background-color: #1b8e99; /*cor de fundo para o menu inferior*/
+    padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
+    height: 45px; /*define altura do box*/
+    position: relative; /*permite alterar posicionamento; necessário para z-index*/
+    z-index: 2; /*define profundidade; valor maior que menu azul e banner*/
+    
+}
+
+.nav2 {
+    display: flex; /*permite uso das propriedades flexbox: justify-content e align items*/
+    justify-content: space-between; /*separa no eixo horizontal, logo e o menu, posiciona-os nas extremidades*/
+    align-items: center; /* centraliza logo e o menu no eixo vertical */
+    background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
+    padding: 0 10px; /* Espaçamento interno no cabeçalho */
+    height: 45px; /*define altura do box*/
+   
+}
+
+#logo img {
+    width: 194px; /* Largura do logo */
+    height: 146px; /* Altura do logo */
+    position: relative;
+    z-index: 1; /*define profundidade; valor menor que logo*/
+    translate: 0 30px; /*desloca 0 no eixo horizontal e 30px no eixo vertical*/
+}
+
+.menu, nav ul {
+    list-style: none; /*remove bullet points*/
+    display: flex; /*define flexbox*/
+    padding: 0; /*reseta padding para zero*/
+    margin: 0;  /*reseta margin para zer0*/
+    gap: 30px; /* Espaço entre os itens do menu; propriedade do display grid, aplicável ao flexbox */
+    text-align: center; /*centraliza texto*/
+    height: 45px; /*define altura para texto, igual à altura do box, para aplicar align-itens*/
+    display: flex; /*permite uso da propriedade align-itens*/
+    align-items: center; /* alinha texto dos links no eixo vertical */
+
+
+}
+
+.menu li a, nav ul li a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 12px; /* Tamanho da fonte dos links */
+
+}
+
+.hover1:hover{
+    background-color: #92c9ce; /*cor de fundo do hover*/
+    height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
+    padding: 0 5px 0 5px;/*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
+    margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    display: flex;/*permite propriedades flexbox*/
+    align-items: center; /*centraliza no eixo vertical*/
+    font-weight: bold; /*negrito*/
+}
+
+.hover2:hover{
+    background-color: white; /*cor de fundo do hover*/
+    height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
+    padding: 0 5px 0 5px; /*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
+    margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    display: flex; /*permite propriedades flexbox*/
+    align-items: center; /*centraliza no eixo vertical*/
+    font-weight: bold /*negrito*/
+}
+
+.hover2:hover a {
+    color: #660000; /*sobreposição à regra herdade de .menu li a, nav ul li a*/
+}
+
+#banner {
+
+    z-index: 1; /*define profundidade; valor menor que logo*/
+}
