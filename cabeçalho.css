@@ -22,8 +22,7 @@ padding: 0;
     padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
     height: 45px; /*define altura do box*/
     position: relative; /*permite alterar posicionamento; necessário para z-index*/
-    z-index: 2; /*define profundidade; valor maior que menu azul e banner*/
-    
+    z-index: 1; /*define profundidade; valor menor que banner*/
 }
 
 .nav2 {
@@ -33,7 +32,7 @@ padding: 0;
     background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
     padding: 0 10px; /* Espaçamento interno no cabeçalho */
     height: 45px; /*define altura do box*/
-   
+    translate: 0 -4px; /*elimina vão entre menu e o banner*/
 }
 
 #logo img {
@@ -70,26 +69,28 @@ padding: 0;
     height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
     padding: 0 5px 0 5px;/*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
     margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    transform: scale(1.3); /*destaca o elemento, aumentando suas proporções*/
     display: flex;/*permite propriedades flexbox*/
     align-items: center; /*centraliza no eixo vertical*/
-    font-weight: bold; /*negrito*/
+    border-radius: 2px; /*olhando bem, há um arredondamento nas bordas*/
 }
 
 .hover2:hover{
     background-color: white; /*cor de fundo do hover*/
     height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
-    padding: 0 5px 0 5px; /*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
-    margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    padding: 0 10px 0 10px; /*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
+    margin: -11px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    transform: scale(1.3); /*destaca o elemento, aumentando suas proporções*/
     display: flex; /*permite propriedades flexbox*/
     align-items: center; /*centraliza no eixo vertical*/
-    font-weight: bold /*negrito*/
+    font-weight: bold; /*negrito*/
+    border-radius: 2px; /*olhando bem, há um arredondamento nas bordas*/
 }
 
 .hover2:hover a {
     color: #660000; /*sobreposição à regra herdade de .menu li a, nav ul li a*/
-}
+}   
 
 #banner {
-
     z-index: 1; /*define profundidade; valor menor que logo*/
 }
