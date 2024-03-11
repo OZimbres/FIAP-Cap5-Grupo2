@@ -25,7 +25,7 @@ padding: 0;
     display: flex;
     justify-content: space-between; /*separa o logo e o menu*/
     align-items: center; /*alinha verticalmente o logo e o menu */
-    background-color: #1b8e99; /*cor de fundo para o menu inferior*/
+    background-color: var(--cor-primária); /*cor de fundo para o menu inferior*/
     padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
     height: 45px; /*define altura do box*/
     position: relative; /*permite alterar posicionamento; necessário para z-index*/
@@ -36,7 +36,7 @@ padding: 0;
     display: flex; /*permite uso das propriedades flexbox: justify-content e align items*/
     justify-content: space-between; /*separa no eixo horizontal, logo e o menu, posiciona-os nas extremidades*/
     align-items: center; /* centraliza logo e o menu no eixo vertical */
-    background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
+    background-color: var(--cor-secundária); /* Cor de fundo para o cabeçalho e o menu secundário */
     padding: 0 10px; /* Espaçamento interno no cabeçalho */
     height: 45px; /*define altura do box*/
     transform: translateY(-4px); /*elimina vão entre menu e o banner*/
@@ -64,14 +64,14 @@ padding: 0;
 }
 
 .menu li a, nav ul li a {
-    color: white; /* Cor do texto dos links */
+    color: var(--branco); /* Cor do texto dos links */
     text-decoration: none; /* Remove o sublinhado dos links */
     font-size: 12px; /* Tamanho da fonte dos links */
 
 }
 
 .hover1:hover{
-    background-color: #92c9ce; /*cor de fundo do hover*/
+    background-color: var(--cor-hover1); /*cor de fundo do hover*/
     height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
     padding: 0 5px 0 5px;/*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
     margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
@@ -83,7 +83,7 @@ padding: 0;
 }
 
 .hover2:hover{
-    background-color: white; /*cor de fundo do hover*/
+    background-color: var(--branco); /*cor de fundo do hover*/
     height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
     padding: 0 10px 0 10px; /*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
     margin: -11px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
@@ -96,7 +96,7 @@ padding: 0;
 }
 
 .hover2:hover a {
-    color: #660000; /*sobreposição à regra herdade de .menu li a, nav ul li a*/
+    color:var(--cor-secundária); /*sobreposição à regra herdade de .menu li a, nav ul li a*/
 }   
 
 #banner {
