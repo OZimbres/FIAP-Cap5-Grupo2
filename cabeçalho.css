@@ -14,6 +14,13 @@ padding: 0;
  
 }
 
+:root {
+--cor-primária: #1b8e99;
+--cor-secundária: #660000;
+--cor-hover1: #92c9ce;
+--branco: #ffffff; 
+}
+
 .nav1 {
     display: flex;
     justify-content: space-between; /*separa o logo e o menu*/
@@ -32,7 +39,7 @@ padding: 0;
     background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
     padding: 0 10px; /* Espaçamento interno no cabeçalho */
     height: 45px; /*define altura do box*/
-    translate: 0 -4px; /*elimina vão entre menu e o banner*/
+    transform: translateY(-4px); /*elimina vão entre menu e o banner*/
 }
 
 #logo img {
@@ -40,12 +47,11 @@ padding: 0;
     height: 146px; /* Altura do logo */
     position: relative;
     z-index: 1; /*define profundidade; valor menor que logo*/
-    translate: 0 30px; /*desloca 0 no eixo horizontal e 30px no eixo vertical*/
+    transform: translateY(30px); /*desloca 0 no eixo horizontal e 30px no eixo vertical*/
 }
 
 .menu, nav ul {
     list-style: none; /*remove bullet points*/
-    display: flex; /*define flexbox*/
     padding: 0; /*reseta padding para zero*/
     margin: 0;  /*reseta margin para zer0*/
     gap: 30px; /* Espaço entre os itens do menu; propriedade do display grid, aplicável ao flexbox */
@@ -73,6 +79,7 @@ padding: 0;
     display: flex;/*permite propriedades flexbox*/
     align-items: center; /*centraliza no eixo vertical*/
     border-radius: 2px; /*olhando bem, há um arredondamento nas bordas*/
+    transition: 0.2s all-ease-in; /*suaviza, aumentando tempo de transição*/
 }
 
 .hover2:hover{
@@ -85,6 +92,7 @@ padding: 0;
     align-items: center; /*centraliza no eixo vertical*/
     font-weight: bold; /*negrito*/
     border-radius: 2px; /*olhando bem, há um arredondamento nas bordas*/
+    transition: 0.2s all-ease-in; /*suaviza transição*/
 }
 
 .hover2:hover a {
