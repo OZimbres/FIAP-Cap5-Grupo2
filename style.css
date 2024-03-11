@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, Tahoma, Verdana;
+    font-size: 14px;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+  }
+
+
+/* Serviços Inicio ---------------------------------- */
+
+#servicos{
+    font: Arial;
+    font-size: 13px;
+    max-width: 960px;
+    margin: auto;
+}
+
+#servicos h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1b8e99;
+    width: 952px;
+    margin: auto;
+}
+
+#servicos-topo{
+    border: 1px solid #1b8e99;
+    width: 835px;
+    margin-inline: 0px;
+}
+
+#servicos-logo{
+    background-image: url(../img/imgDroneB.png);
+    width: 120px;
+    height: 70px;
+    margin-top: -45px;
+    margin-right: 0px;
+    float: right;
+}
+
+/* Cursos Inicio ----------------------------------- */
+
+#curso{
+
+}
+
+#curso td{
+    border: 1px solid #660000;
+    width: 300px;
+    height: 288px;
+    padding-top: 45px;  
+}
+
+#curso img{
+    width: 300px;
+    height: 136px;
+    margin-top: -140px;
+}
+
+#curso-titulo{
+    font-family: 'Tahoma';
+    font-size: 17px;
+    font-weight: bold;
+    color: #660000;
+    padding-left: 18px;  
+}
+
+#curso-texto{
+    font-family: 'Tahoma';
+    font-size: 11px;
+    color: #660000;
+    font-weight: bold;
+    padding-left: 18px;
+    padding-right: 10px;
+}
+#curso-rodape{
+    border: 5px solid #660000;
+    width: 290px;
+    margin-bottom: -82px; 
+}
+
+/* Filmagem Inicio ----------------------------- */
+
+#filmagem td{
+    border: 1px solid #660000;
+    width: 300px;
+    height: 288px;
+    padding-top: 45px;
+    
+}
+
+#filmagem img{
+    width: 300px;
+    height: 137px;
+    margin-top: -72px;
+}
+
+#filmagem-titulo{
+    font-family: 'Tahoma';
+    font-size: 17px;
+    font-weight: bold;
+    color: #660000;
+    padding-bottom: 25px;
+    padding-left: 18px;  
+}
+
+#filmagem-texto{
+    font-family: 'Tahoma';
+    font-size: 11px;
+    color: #660000;
+    font-weight: bold;
+    /*padding-bottom: 15px;*/
+    padding-left: 18px;
+    padding-right: 10px;
+}
+#filmagem-rodape{
+    border: 5px solid #660000;
+    width: 291px;
+    margin-bottom: -30px; 
+}
+
+/* Manutenção Inicio ----------------------------- */
+
+#manutencao td{
+    border: 1px solid #1b8e99;
+    width: 300px;
+    height: 288px;
+    padding-top: 45px;   
+}
+
+#manutencao img{
+    width: 300px;
+    height: 140px;
+    margin-top: -85px;
+}
+
+#manutencao-titulo{
+    font-family: 'Tahoma';
+    font-size: 17px;
+    font-weight: bold;
+    color: #1b8e99;
+    padding-left: 18px;  
+}
+
+#manutencao-texto{
+    font-family: 'Tahoma';
+    font-size: 11px;
+    color: #1b8e99;
+    font-weight: bold;
+    padding-left: 18px;
+    padding-right: 10px;
+}
+#manutencao-rodape{
+    border: 5px solid #1b8e99;
+    width: 290px;
+    margin-bottom: -42px;
+}
