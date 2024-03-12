@@ -1,3 +1,4 @@
+/*-----===| UNIVERSAL |===-----*/
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +17,82 @@ html{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+}
+
+/*-----===| HEADER |===-----*/
+/*---| Todos que usam 'display: flex'*/
+.nav1, .banner, .nav2, .menu-nav1, .menu-nav2, .hover1, .hover2{
+    display: flex; /*permite uso das propriedades flexbox: justify-content e align items*/
+    align-items: center; /*alinha verticalmente o logo e o menu*/
+    justify-content: center; /*separa o logo e o menu*/
+}
+header{
+    width: 980px; /*largura do box content, sem contar padding e border*/
+    margin: 30px 0 0 0; /*valores em sentido horário; 20px para margem superior; valor auto renderiza automaticamente margens laterais, para centralizar conteúdo; valor 0 para bottom=0*/
+}
+
+.nav1{
+    background-color: #1b8e99; /*cor de fundo para o menu inferior*/
+    padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
+    height: 45px; /*define altura do box*/
+    position: relative; /*permite alterar posicionamento; necessário para z-index*/
+    z-index: 2; /*define profundidade; valor maior que menu azul e banner*/
+}
+
+.banner{
+    height: auto;
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+
+.nav2{
+    background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
+    padding: 0 10px; /* Espaçamento interno no cabeçalho */
+    height: 45px; /*define altura do box*/
+}
+
+.logo img{
+    width: 194px; /* Largura do logo */
+    height: 146px; /* Altura do logo */
+    position: relative;
+    z-index: 1; /*define profundidade; valor menor que logo*/
+    translate: 0 30px; /*desloca 0 no eixo horizontal e 30px no eixo vertical*/
+}
+
+.menu-nav1, .menu-nav2{
+    height: 45px; /*define altura para texto, igual à altura do box, para aplicar align-itens*/
+    gap: 30px; /* Espaço entre os itens do menu; propriedade do display grid, aplicável ao flexbox */
+    list-style: none; /*remove bullet points*/
+    padding: 0; /*reseta padding para zero*/
+    margin: 0;  /*reseta margin para zer0*/
+}
+
+.hover1{}
+.hover1:hover{
+    height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
+    padding: 0 5px 0 5px;/*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
+    margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    background-color: #92c9ce; /*cor de fundo do hover*/
+}
+
+.hover2{}
+.hover2:hover{
+    height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
+    padding: 0 5px 0 5px; /*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
+    margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
+    background-color: white; /*cor de fundo do hover*/
+    font-weight: bold /*negrito*/
+}
+
+.hover1 a, .hover2 a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 12px; /* Tamanho da fonte dos links */
+}
+.hover2:hover a{
+    color: #660000; /*sobreposição à regra herdade de .hover1 a, .hover2 a*/
 }
 
 /*-----===| SERVICOS |===-----*/
