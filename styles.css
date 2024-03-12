@@ -170,7 +170,7 @@ padding: 0;
 }
 
 
-#container {
+#header {
     width: 980px; /*largura do box content, sem contar padding e border*/
     margin: 50px auto 0; /*valores em sentido horário;
     20px para margem superior;
