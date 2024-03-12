@@ -1,269 +1,193 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    background-color: white;
+    box-sizing: border-box;
     font-family: Arial, Tahoma, Verdana;
-    font-size: 14px;
-    
-}
-
-.container {
-    width: 100%;
-    max-width: 980px;
-    margin: auto;
-  }
-
-
-/* Serviços Inicio ---------------------------------- */
-
-#servicos{
-    font: Arial;
-    font-size: 13px;
-    max-width: 960px;
-    margin: auto;
-}
-
-#servicos h2{
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #1b8e99;
-    width: 952px;
-    margin: auto;
-}
-
-#servicos-topo{
-    border: 1px solid #1b8e99;
-    width: 835px;
-    margin-inline: 0px;
-}
-
-#servicos-logo{
-    background-image: url(../img/imgDroneB.png);
-    width: 120px;
-    height: 70px;
-    margin-top: -45px;
-    margin-right: 0px;
-    float: right;
-}
-
-/* Cursos Inicio ----------------------------------- */
-
-#curso{
-
-}
-
-#curso td{
-    border: 1px solid #660000;
-    width: 300px;
-    height: 288px;
-    padding-top: 45px;  
-}
-
-#curso img{
-    width: 300px;
-    height: 136px;
-    margin-top: -140px;
-}
-
-#curso-titulo{
-    font-family: 'Tahoma';
-    font-size: 17px;
-    font-weight: bold;
-    color: #660000;
-    padding-left: 18px;  
-}
-
-#curso-texto{
-    font-family: 'Tahoma';
-    font-size: 11px;
-    color: #660000;
-    font-weight: bold;
-    padding-left: 18px;
-    padding-right: 10px;
-}
-#curso-rodape{
-    border: 5px solid #660000;
-    width: 290px;
-    margin-bottom: -82px; 
-}
-
-/* Filmagem Inicio ----------------------------- */
-
-#filmagem td{
-    border: 1px solid #660000;
-    width: 300px;
-    height: 288px;
-    padding-top: 45px;
-    
-}
-
-#filmagem img{
-    width: 300px;
-    height: 137px;
-    margin-top: -72px;
-}
-
-#filmagem-titulo{
-    font-family: 'Tahoma';
-    font-size: 17px;
-    font-weight: bold;
-    color: #660000;
-    padding-bottom: 25px;
-    padding-left: 18px;  
-}
-
-#filmagem-texto{
-    font-family: 'Tahoma';
-    font-size: 11px;
-    color: #660000;
-    font-weight: bold;
-    /*padding-bottom: 15px;*/
-    padding-left: 18px;
-    padding-right: 10px;
-}
-#filmagem-rodape{
-    border: 5px solid #660000;
-    width: 291px;
-    margin-bottom: -30px; 
-}
-
-/* Manutenção Inicio ----------------------------- */
-
-#manutencao td{
-    border: 1px solid #1b8e99;
-    width: 300px;
-    height: 288px;
-    padding-top: 45px;   
-}
-
-#manutencao img{
-    width: 300px;
-    height: 140px;
-    margin-top: -85px;
-}
-
-#manutencao-titulo{
-    font-family: 'Tahoma';
-    font-size: 17px;
-    font-weight: bold;
-    color: #1b8e99;
-    padding-left: 18px;  
-}
-
-#manutencao-texto{
-    font-family: 'Tahoma';
-    font-size: 11px;
-    color: #1b8e99;
-    font-weight: bold;
-    padding-left: 18px;
-    padding-right: 10px;
-}
-#manutencao-rodape{
-    border: 5px solid #1b8e99;
-    width: 290px;
-    margin-bottom: -42px;
-}
-
-*{
-margin: 0;
-padding: 0;
-}
-
-
-#container {
-    width: 980px; /*largura do box content, sem contar padding e border*/
-    margin: 50px auto 0; /*valores em sentido horário;
-    20px para margem superior;
-    valor auto renderiza automaticamente margens laterais, para centralizar conteúdo
-    valor 0 para bottom=0*/
- 
 }
 
 :root {
---cor-primária: #1b8e99;
---cor-secundária: #660000;
---cor-hover1: #92c9ce;
---branco: #ffffff; 
+    --cor-primária: #1b8e99;
+    --cor-secundária: #660000;
+    --cor-hover1: #92c9ce;
+    --branco: #ffffff; 
 }
 
-.nav1 {
+html{
     display: flex;
-    justify-content: space-between; /*separa o logo e o menu*/
-    align-items: center; /*alinha verticalmente o logo e o menu */
-    background-color: var(--cor-primária); /*cor de fundo para o menu inferior*/
-    padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
-    height: 45px; /*define altura do box*/
-    position: relative; /*permite alterar posicionamento; necessário para z-index*/
-    z-index: 1; /*define profundidade; valor menor que banner*/
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.nav2 {
-    display: flex; /*permite uso das propriedades flexbox: justify-content e align items*/
-    justify-content: space-between; /*separa no eixo horizontal, logo e o menu, posiciona-os nas extremidades*/
-    align-items: center; /* centraliza logo e o menu no eixo vertical */
-    background-color: var(--cor-secundária); /* Cor de fundo para o cabeçalho e o menu secundário */
-    padding: 0 10px; /* Espaçamento interno no cabeçalho */
-    height: 45px; /*define altura do box*/
-    transform: translateY(-4px); /*elimina vão entre menu e o banner*/
+/*-----===| SERVICOS |===-----*/
+/*---| Todos que usam 'display: flex'*/
+.servicos, .servicos-cabecalho, .servicos-cabecalho-left, .servicos-cabecalho-left span, .servicos-cabecalho-image-container, .servicos-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#logo img {
-    width: 194px; /* Largura do logo */
-    height: 146px; /* Altura do logo */
-    position: relative;
-    z-index: 1; /*define profundidade; valor menor que logo*/
-    transform: translateY(30px); /*desloca 0 no eixo horizontal e 30px no eixo vertical*/
+.servicos{
+    height: 445px;
+    width: 980px;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.menu, nav ul {
-    list-style: none; /*remove bullet points*/
-    padding: 0; /*reseta padding para zero*/
-    margin: 0;  /*reseta margin para zer0*/
-    gap: 30px; /* Espaço entre os itens do menu; propriedade do display grid, aplicável ao flexbox */
-    text-align: center; /*centraliza texto*/
-    height: 45px; /*define altura para texto, igual à altura do box, para aplicar align-itens*/
-    display: flex; /*permite uso da propriedade align-itens*/
-    align-items: center; /* alinha texto dos links no eixo vertical */
-
-
+.barra-cinza{
+    height: 15px;
+    width: 100%;
+    background-color: rgb(77, 77, 77);
 }
 
-.menu li a, nav ul li a {
-    color: var(--branco); /* Cor do texto dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
-    font-size: 12px; /* Tamanho da fonte dos links */
-
+.servicos-cabecalho{
+    height: 80px;
+    width: 100%;
+}
+.servicos-cabecalho-left{
+    height: 100%;
+    width: calc(100% - 125px);
+    flex-direction: column;
+    align-items: flex-start;
+}
+.servicos-cabecalho-left span{
+    height: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    color: var(--cor-primária);
+}
+.cabecalho-barra-azul{
+    height: 3px;
+    width: 100%;
+    background-color: var(--cor-primária);
+}
+.servicos-cabecalho-image-container{
+    height: 77px;
+    width: 125px;
+}
+.servicos-cabecalho-image{
+    height: 100%;
 }
 
-.hover1:hover{
-    background-color: var(--cor-hover1); /*cor de fundo do hover*/
-    height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
-    padding: 0 5px 0 5px;/*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
-    margin: -5px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
-    transform: scale(1.3); /*destaca o elemento, aumentando suas proporções*/
-    display: flex;/*permite propriedades flexbox*/
-    align-items: center; /*centraliza no eixo vertical*/
-    border-radius: 2px; /*olhando bem, há um arredondamento nas bordas*/
-    transition: 0.2s all-ease-in; /*suaviza, aumentando tempo de transição*/
+.servicos-conteudo{
+    width: 100%;
+    height: 340px;
+    justify-content: space-between;
 }
 
-.hover2:hover{
-    background-color: var(--branco); /*cor de fundo do hover*/
-    height: 55px; /*altura 10px maior do que box, para dar efeito de overflow/transbordamento*/
-    padding: 0 10px 0 10px; /*aumenta  área de padding à esquerda e à direita, mas está empurrando os elementos circundantes*/
-    margin: -11px; /*evita deslocamento lateral dos elementos ao redor após aumento do padding, mas cria um problema no eixo vertical*/
-    transform: scale(1.3); /*destaca o elemento, aumentando suas proporções*/
-    display: flex; /*permite propriedades flexbox*/
-    align-items: center; /*centraliza no eixo vertical*/
-    font-weight: bold; /*negrito*/
-    border-radius: 2px; /*olhando bem, há um arredondamento nas bordas*/
-    transition: 0.2s all-ease-in; /*suaviza transição*/
+.servicos-card{
+    height: 100%;
+    width: 310px;
 }
 
-.hover2:hover a {
-    color:var(--cor-secundária); /*sobreposição à regra herdade de .menu li a, nav ul li a*/
-}   
+.card-cursos, .card-filmagens-aereas{
+    border: solid 1px var(--cor-secundária);
+    border-bottom: solid 5px var(--cor-secundária);
+    color: var(--cor-secundária);
+}
+.card-manutencoes{
+    border: solid 1px var(--cor-primária);
+    border-bottom: solid 5px var(--cor-primária);
+    color: var(--cor-primária);
+}
+.card-image-container{
+    width: 100%;
+}
+.card-image{
+    width: 100%;
+}
+.card-titulo{
+    font-size: 15px;
+    padding: 0 15px 15px 15px;
+}
+.card-descricao{
+    padding: 0 15px 15px 15px;
+    bottom: 0;
+}
+.card-descricao span{
+    font-size: 12px;
+}
 
-#banner {
-    z-index: 1; /*define profundidade; valor menor que logo*/
+/*-----===| FOOTER |===-----*/
+/*---| Todos que usam 'display: flex'*/
+footer, .footer-mini-professor, .footer-imagem-drones, .drone1, .drone2, .drone3, .footer-content, .section-left, .section-right, .footer-creditos, .footer-creditos span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 168px;
+    max-width: 980px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.footer-mini-professor{
+    height: 168px;
+    max-width: 980px;
+    width: 100%;
+    position: absolute;
+    justify-content: flex-end;
+}
+.footer-mini-professor img{
+    height: 100%;
+    right: 0;
+}
+
+.footer-imagem-drones{
+    height: 46px;
+    width: 100%;
+}
+.drone1, .drone2, .drone3{
+    height: 100%;
+    width: 33%;
+}
+.drone1, .drone3{
+    justify-content: flex-start;
+}
+
+.footer-content{
+    height: 96px;
+    max-width: 980px;
+    width: 100%;
+    background-color: var(--cor-primária);
+    justify-content: flex-start;
+}
+.section-left{
+    height: 100%;
+    width: 25%;
+}
+.section-left-drones, .section-left-net{
+    font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+}
+.section-left-net{
+    font-size: 24px;
+    color: rgb(248, 255, 146);
+}
+.section-right{
+    height: 100%;
+    width: calc(75% - 95px);
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-creditos{
+    height: 26px;
+    width: 100%;
+    background-color: var(--cor-secundária);
+    justify-content: flex-start;
+}
+.footer-creditos span{
+    height: 100%;
+    width: calc(100% - 100px);
+    justify-content: flex-end;
+    color: white;
+    font-size: 14px;
 }

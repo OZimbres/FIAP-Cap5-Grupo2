@@ -10,78 +10,70 @@
 
 <body>
     <main>
-        <div id="servicos">
-            <br>
-            <h2>Serviços</h2>
-            <div id="servicos-logo"></div>
-            <hr id="servicos-topo">
-            <br><br>
-            <table>
-                <tr>
-                    <td>
-                        <div id="curso">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <img src="img/ServicosA.png" alt="ServiçosA">
-                                        <p id="curso-titulo">CURSOS</p>
-                                        <br>
-                                        <p id="curso-texto">Graças a nossos equipamentos sofisticados<br>
-                                            podemos lhe oferecer uma experiência incrível<br>
-                                            de voo e podemos lhe ensinar como realizar<br>
-                                            uma captaçào de vídeos e fotos aéreas com alta<br>
-                                            qualidade voltadas a atender todo o mercado de<br>
-                                            produção audiovisual. As aulas podem ocorrer<br>
-                                            também com o equipamento pessoal do aluno.</p>
-                                        <hr id="curso-rodape">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>
-                        <div id="manutencao">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <img src="img/ServicosB.png" alt="ServiçosB">
-                                        <p id="manutencao-titulo">Manutenções</p>
-                                        <br>
-                                        <p id="manutencao-texto">Temos um completo Laboratório de eletrônica,<br>
-                                            nossos técnicos utilizam alta tecnologia para<br>
-                                            efetuar o reparo do seu Drone. Efetuamos o<br>
-                                            reparo da camera GoPro, e dos Quadricopteros<br>
-                                            da linha DJI Phantom e AR.Drone 1.0 e 2.0.</p>
-                                        <br>
-                                        <hr id="manutencao-rodape">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                    <td>
-                        <div id="filmagem">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <img src="img/ServicosC.png" alt="ServiçosC">
-                                        <p id="filmagem-titulo">Filmagens Aéreas</p>
-                                        <p id="filmagem-texto">Graças a nosso equipamentos sofisticados<br>
-                                            podemos lhe oferecer uma experiência incrível<br>
-                                            de voo e podemos lhe ensinar como realizar<br>
-                                            uma captação de vídeos e fotos aéreas com alta<br>
-                                            qualidade voltadas a atender todo o mercado de<br>
-                                            produção audiovisual. As aulas podem ocorrer<br>
-                                            também com o equipamento pessoal do aluno.</p>
-                                        <hr id="filmagem-rodape">
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <section class="servicos">
+            <div class="barra-cinza"></div>
+
+            <div class="servicos-cabecalho">
+                <div class="servicos-cabecalho-left">
+                    <span>SERVIÇOS</span>
+                    <div class="cabecalho-barra-azul"></div>
+                </div>
+
+                <figure class="servicos-cabecalho-image-container">
+                    <img src="img/imgDroneB.png" alt="" class="servicos-cabecalho-image">
+                </figure>
+            </div>
+
+            <div class="servicos-conteudo">
+                <div class="servicos-card card-cursos">
+                    <figure class="card-image-container">
+                        <img src="img/ServicosA.png" alt="Imagem Ilustrativa para Serviço de Cursos" class="card-image">
+                    </figure>
+
+                    <div class="card-titulo">
+                        <h2>CURSOS</h2>
+                    </div>
+
+                    <div class="card-descricao">
+                        <span>
+                            Graças a nossos equipamentos sofisticados podemos lhe oferecer uma experiência incrível de voo e podemos lhe ensinar como realizar uma captaçào de vídeos e fotos aéreas com alta qualidade voltadas a atender todo o mercado de produção audiovisual. As aulas podem ocorrer também com o equipamento pessoal do aluno.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="servicos-card card-manutencoes">
+                    <figure class="card-image-container">
+                        <img src="img/ServicosB.png" alt="" class="card-image">
+                    </figure>
+
+                    <div class="card-titulo">
+                        <h2>MANUTENÇÕES</h2>
+                    </div>
+
+                    <div class="card-descricao">
+                        <span>
+                            Temos um completo Laboratório de eletrônica, nossos técnicos utilizam alta tecnologia para efetuar o reparo do seu Drone. Efetuamos o reparo da camera GoPro, e dos Quadricopteros da linha DJI Phantom e AR.Drone 1.0 e 2.0.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="servicos-card card-filmagens-aereas">
+                    <figure class="card-image-container">
+                        <img src="img/ServicosC.png" alt="" class="card-image">
+                    </figure>
+
+                    <div class="card-titulo">
+                        <h2>FILMAGENS AÉREAS</h2>
+                    </div>
+
+                    <div class="card-descricao">
+                        <span>
+                            Graças a nosso equipamentos sofisticados podemos lhe oferecer uma experiência incrível de voo e podemos lhe ensinar como realizar uma captação de vídeos e fotos aéreas com alta qualidade voltadas a atender todo o mercado de produção audiovisual. As aulas podem ocorrer também com o equipamento pessoal do aluno.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -90,21 +82,28 @@
         </figure>
 
         <div class="footer-imagem-drones">
-            <figure class="drone1"></figure>
+            <figure class="drone1">
+                <img src="img/imgDroneC.png" alt="">
+            </figure>
 
-            <figure class="drone2"></figure>
+            <figure class="drone2">
+                <img src="img/imgDroneC.png" alt="">
+            </figure>
 
-            <figure class="drone3"></figure>
+            <figure class="drone3">
+                <img src="img/imgDroneC.png" alt="">
+            </figure>
         </div>
 
         <div class="footer-content">
             <div class="section-left">
-                <span></span>
-                <span></span>
+                <span class="section-left-drones">DRONES</span>
+                <span class="section-left-net">NET</span>
             </div>
 
             <div class="section-right">
-                <span class="descricao"></span>
+                <span class="descricao">Boa Sorte meu amigo! que sua estrada seja feita de campos verdes para que seus pés caminhem para o sucesso...</span>
+                <span>Boa Sorte de coração!</span>
             </div>
         </div>
 
