@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+html{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 body{
 margin: 0;
 padding: 0;
 background-color: white;
 font-family: Arial, Tahoma, Verdana;
 font-size: 14px;
+}
 
+main{
+    transform: translateY(35px);
 }
 
 .container {
@@ -23,33 +32,45 @@ margin: auto;
 /* Serviços Inicio ---------------------------------- */
 
 #servicos{
-font: Arial;
-font-size: 13px;
-max-width: 960px;
-margin: auto;
+    font: Arial;
+    font-size: 13px;
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-#servicos h2{
+.servicos-cabecalho{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.servicos-cabecalho h2{
 font-size: 18px;
 text-transform: uppercase;
 color: #1b8e99;
-width: 952px;
-margin: auto;
+align-self: center;
 }
 
 #servicos-topo{
 border: 1px solid #1b8e99;
 width: 835px;
 margin-inline: 0px;
+align-self: flex-start;
+transform: translateY(-30px);
 }
 
-#servicos-logo{
-background-image: url(../img/imgDroneB.png);
+.servicos-logo{
 width: 120px;
 height: 70px;
 margin-top: -45px;
 margin-right: 0px;
-float: right;
+align-self: flex-end;
 }
 
 /* Cursos Inicio ----------------------------------- */
@@ -166,10 +187,16 @@ width: 290px;
 margin-bottom: -42px;
 }
 
+.divisao-cards{
+    height: 15px;
+    width: 100%;
+    background-color: #444444;
+    margin-top: 15px;
+}
 
-#header {
+header {
 width: 980px; /*largura do box content, sem contar padding e border*/
-margin: 50px auto 0; /*valores em sentido horário;
+margin: 30px auto 0; /*valores em sentido horário;
 20px para margem superior;
 valor auto renderiza automaticamente margens laterais, para centralizar conteúdo
 valor 0 para bottom=0*/
@@ -298,6 +325,7 @@ font-size: 25px;
 } /*fim*/
 
 .container-lojavirtual { /*inicio*/
+    height: 375px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -417,7 +445,7 @@ font-size: 25px;
 .paragrafo-ar {
     text-align: left;
     color: #1b8e99;
-    margin: 10px 40px 20px 12px;
+    margin: 10px 40px 15px 12px;
     font-size: 13px;
     font: tahoma;
 }
@@ -429,7 +457,6 @@ font-size: 25px;
     background-color: #1b8e99;
     text-align: left;
     font: tahoma;
-    margin-top: 30px;
 }
 
 .valor-ar {
@@ -581,7 +608,7 @@ footer{
     max-width: 980px;
     width: 100%;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .footer-mini-professor{
