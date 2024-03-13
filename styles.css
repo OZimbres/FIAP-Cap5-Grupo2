@@ -32,10 +32,11 @@ header{
 }
 
 .nav1{
-    background-color: #1b8e99; /*cor de fundo para o menu inferior*/
-    padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
     height: 45px; /*define altura do box*/
     position: relative; /*permite alterar posicionamento; necessário para z-index*/
+    padding: 0 10px; /*espaçamento interno entre itens no cabeçalho */
+    justify-content: space-between;
+    background-color: #1b8e99; /*cor de fundo para o menu inferior*/
     z-index: 2; /*define profundidade; valor maior que menu azul e banner*/
 }
 
@@ -48,9 +49,10 @@ header{
 }
 
 .nav2{
-    background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
-    padding: 0 10px; /* Espaçamento interno no cabeçalho */
     height: 45px; /*define altura do box*/
+    padding: 0 10px; /* Espaçamento interno no cabeçalho */
+    background-color: #660000; /* Cor de fundo para o cabeçalho e o menu secundário */
+    justify-content: flex-start;
 }
 
 .logo img{
@@ -67,6 +69,10 @@ header{
     list-style: none; /*remove bullet points*/
     padding: 0; /*reseta padding para zero*/
     margin: 0;  /*reseta margin para zer0*/
+}
+
+.hover1, .hover2{
+    transition: all .2s;
 }
 
 .hover1{}
