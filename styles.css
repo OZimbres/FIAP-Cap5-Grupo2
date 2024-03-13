@@ -7,8 +7,8 @@
 }
 
 :root {
-    --cor-primária: #1b8e99;
-    --cor-secundária: #660000;
+    --cor-primaria: #1b8e99;
+    --cor-secundaria: #660000;
     --cor-hover1: #92c9ce;
     --branco: #ffffff; 
 }
@@ -137,12 +137,12 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 18px;
-    color: var(--cor-primária);
+    color: var(--cor-primaria);
 }
 .cabecalho-barra-azul{
     height: 3px;
     width: 100%;
-    background-color: var(--cor-primária);
+    background-color: var(--cor-primaria);
 }
 .servicos-cabecalho-image-container{
     height: 77px;
@@ -164,14 +164,14 @@ header{
 }
 
 .card-cursos, .card-filmagens-aereas{
-    border: solid 1px var(--cor-secundária);
-    border-bottom: solid 5px var(--cor-secundária);
-    color: var(--cor-secundária);
+    border: solid 1px var(--cor-secundaria);
+    border-bottom: solid 5px var(--cor-secundaria);
+    color: var(--cor-secundaria);
 }
 .card-manutencoes{
-    border: solid 1px var(--cor-primária);
-    border-bottom: solid 5px var(--cor-primária);
-    color: var(--cor-primária);
+    border: solid 1px var(--cor-primaria);
+    border-bottom: solid 5px var(--cor-primaria);
+    color: var(--cor-primaria);
 }
 .card-image-container{
     width: 100%;
@@ -235,7 +235,7 @@ footer{
     height: 96px;
     max-width: 980px;
     width: 100%;
-    background-color: var(--cor-primária);
+    background-color: var(--cor-primaria);
     justify-content: flex-start;
 }
 .section-left{
@@ -264,7 +264,7 @@ footer{
 .footer-creditos{
     height: 26px;
     width: 100%;
-    background-color: var(--cor-secundária);
+    background-color: var(--cor-secundaria);
     justify-content: flex-start;
 }
 .footer-creditos span{
