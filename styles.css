@@ -566,3 +566,88 @@ font-size: 25px;
     margin-left: 12px;
     margin-right: 6px;
 } /*fim*/
+
+
+/*-----===| FOOTER |===-----*/
+/*---| Todos que usam 'display: flex'*/
+footer, .footer-mini-professor, .footer-imagem-drones, .drone1, .drone2, .drone3, .footer-content, .section-left, .section-right, .footer-creditos, .footer-creditos span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    height: 168px;
+    max-width: 980px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.footer-mini-professor{
+    height: 168px;
+    max-width: 980px;
+    width: 100%;
+    position: absolute;
+    justify-content: flex-end;
+}
+.footer-mini-professor img{
+    height: 100%;
+    right: 0;
+}
+
+.footer-imagem-drones{
+    height: 46px;
+    width: 100%;
+}
+.drone1, .drone2, .drone3{
+    height: 100%;
+    width: 33%;
+}
+.drone1, .drone3{
+    justify-content: flex-start;
+}
+
+.footer-content{
+    height: 96px;
+    max-width: 980px;
+    width: 100%;
+    background-color: var(--cor-primária);
+    justify-content: flex-start;
+}
+.section-left{
+    height: 100%;
+    width: 25%;
+}
+.section-left-drones, .section-left-net{
+    font-family:'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+}
+.section-left-net{
+    font-size: 24px;
+    color: rgb(248, 255, 146);
+}
+.section-right{
+    height: 100%;
+    width: calc(75% - 95px);
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-creditos{
+    height: 26px;
+    width: 100%;
+    background-color: var(--cor-secundária);
+    justify-content: flex-start;
+}
+.footer-creditos span{
+    height: 100%;
+    width: calc(100% - 100px);
+    justify-content: flex-end;
+    color: white;
+    font-size: 14px;
+}
